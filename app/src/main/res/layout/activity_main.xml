@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_user"
+        android:gravity="center"
+        android:text="@string/username"
+        android:layout_centerInParent="true"
+        android:layout_margin="10dp"
+    />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_pass"
+        android:text="@string/password"
+        android:gravity="center"
+        android:layout_below="@+id/tv_user"
+        android:layout_centerInParent="true"
+        android:layout_margin="10dp"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/show_dialog_box"
+        android:textSize="15sp"
+        android:textColor="@color/white"
+        android:shadowRadius="@integer/material_motion_duration_short_1"
+        android:shadowColor="@color/black"
+        android:id="@+id/showDialogBtn"
+        android:layout_below="@+id/tv_pass"
+        android:layout_centerInParent="true"/>
+
+</RelativeLayout>
